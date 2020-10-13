@@ -16,6 +16,7 @@ body {
 main {
     display:block;
     height:175px;
+    margin-bottom: 30px;
 }
 
 header {
