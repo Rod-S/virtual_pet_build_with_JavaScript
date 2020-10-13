@@ -78,7 +78,8 @@ $(function() {
     function updatePetInfoInHtml() {
         $('.name').text(pet_info.name);
         $('.weight').text(pet_info.weight);
-        $('div:nth-of-type(3n)').after(`<p>${pet_info.weight_message}</p>`);
+        $(".weight_description").remove();
+        $('div:nth-of-type(3n)').after(`<p class="weight_description">${pet_info.weight_message}</p>`);
         $('.happiness').text(pet_info.happiness);
     }
 })
